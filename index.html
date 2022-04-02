@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1><br>
+    <form action="" name="Calculator">
+        <input type="text" class="displaytext" name="text1" disabled>
+        <input type="button" class="num clear" value="C" name="text12" onclick="location.reload()" ><br>
+        <input type="button" class="text maincolor" value="9" name="btn9" onclick="display(value)">
+        <input type="button" class="text maincolor" value="8" name="btn8" onclick="display(value)">
+        <input type="button" class="text maincolor" value="7" name="btn7" onclick="display(value)">
+        <input type="button" class="num blue" value="+" onclick="display(value)"><br>
+
+        <input type="button" class="text maincolor" value="6" onclick="display(value)">
+        <input type="button" class="text maincolor" value="5" onclick="display(value)">
+        <input type="button" class="text maincolor" value="4" onclick="display(value)">
+        <input type="button" class="num red" value="-" onclick="display(value)"><br>
+
+        <input type="button" class="text maincolor" value="3" onclick="display(value)">
+        <input type="button" class="text maincolor" value="2" onclick="display(value)">
+        <input type="button" class="text maincolor" value="1" onclick="display(value)">
+        <input type="button" class="num green" value="*" onclick="display(value)"><br>
+
+        <input type="button" class="text maincolor" value="." onclick="display(value)">
+        <input type="button" class="text maincolor" value="0" onclick="display(value)">
+        <input type="button" class="num pink" value="=" onclick="text1.value=eval(text1.value)"> <!-- eval("1" "+" "2") = 3-->
+        <input type="button" class="text maincolor" value="/" onclick="display(value)">
+    </form>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
